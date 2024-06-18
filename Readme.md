@@ -1,6 +1,12 @@
 
 # Building a Monorepo with React Native, React, and Node.js: A Small Project Todo List
 
+### Requirements
+
+```
+node v16.20.2^
+npx react-native doctor
+```
 
 ### Installation
 ```
