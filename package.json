@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "GeoTracker",
+  "name": "todoListFullStack",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -19,7 +19,7 @@
     "shared-build": "yarn workspace shared build",
     "shared-nodeModules": "yarn workspace shared install"
   },
-  "repository": "https://github.com/mcknx/GeoTracker.git",
+  "repository": "https://github.com/mcknx/todoListFullStack.git",
   "author": "mcknx <mcasmakeen@gmail.com>",
   "dependencies": {
     "mongodb": "^6.7.0"
