@@ -21,7 +21,8 @@ const App: React.FC = () => {
 
   // Fetch all ToDo items from the server on component mount
   useEffect(() => {
-    getAllToDo(setToDo, Platform.OS);
+    const res = getAllToDo(setToDo, Platform.OS);
+    console.log('ressssssssssssssssssssssss', res)
   }, []);
 
   // Function to enter update mode for a specific ToDo item
@@ -44,7 +45,7 @@ const App: React.FC = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={{flex: 1,paddingHorizontal:12}}>
+      <View style={{flex: 1, paddingHorizontal: 12}}>
         <Text style={styles.title}>ToDo App</Text>
 
         <View style={styles.top}>
@@ -67,8 +68,9 @@ const App: React.FC = () => {
           style={styles.list}
           data={toDo}
           keyExtractor={item => item._id}
-          renderItem={({item}) => (
+          renderItem={({item, index}) => (
             <ToDo
+              key={index}
               text={item.text}
               updateMode={() => updateMode(item._id, item.text)}
               deleteToDo={() => deleteToDo(item._id, setToDo, Platform.OS)}

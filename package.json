@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "monoRepo-with-fullStackTodoList",
+  "name": "GeoTracker",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -18,5 +18,10 @@
     "mobile-android": "yarn workspace mobile android",
     "shared-build": "yarn workspace shared build",
     "shared-nodeModules": "yarn workspace shared install"
+  },
+  "repository": "https://github.com/mcknx/GeoTracker.git",
+  "author": "mcknx <mcasmakeen@gmail.com>",
+  "dependencies": {
+    "mongodb": "^6.7.0"
   }
 }

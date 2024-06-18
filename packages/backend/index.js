@@ -4,12 +4,13 @@ const cors = require('cors');
 require('dotenv').config(); // Load environment variables from the .env file
 const router = require('./routes/TodoRotue'); // Assuming the router is defined in 'TodoRotue.js'
 const app = express();
+const uri = "mongodb+srv://mcknx:uUr%40%5E5ZeAKyw7%24UI@cluster0.cowhwoa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"; // will turn it off after examination checking
 
 app.use(express.json()); // Middleware to parse JSON data from incoming requests
 app.use(cors()); // Enable CORS to allow cross-origin requests
 
 mongoose
-  .connect(process.env.MONGODB_URL) // Connect to the MongoDB database using the URL from .env file
+  .connect(uri) // Connect to the MongoDB database using the URL from .env file
   .then(() => console.log('Connected to MongoDB'))
   .catch((err) => console.error('Error connecting to MongoDB:', err));
 

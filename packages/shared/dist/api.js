@@ -26,7 +26,7 @@ const getAllToDo = (setToDo, platform) => __awaiter(void 0, void 0, void 0, func
     try {
         const response = yield axios_1.default.get(baseUrl[platform]);
         const data = response.data;
-        console.log("Received data:", data);
+        console.log("Received dataaaaaaaaaaaaaaaaaaaaaaaaaaaa:", data);
         setToDo(data);
     }
     catch (err) {
