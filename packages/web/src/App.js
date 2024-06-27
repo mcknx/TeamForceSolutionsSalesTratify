@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>ToDo App</h1>
+        <h1 className="bg-red-600 text-3xl font-bold underline border-8 border-black">ToDo App</h1>
 
         <div className="top">
           {/* Input field to add new Todo items */}

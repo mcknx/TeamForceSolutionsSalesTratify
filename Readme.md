@@ -17,6 +17,11 @@ yarn shared-nodeModules
 yarn shared-build
 ```
 
+### Add tailwindcss to web
+```
+yarn workspace web add tailwindcss
+```
+
 ### Run the app
 ```
 yarn web-start
